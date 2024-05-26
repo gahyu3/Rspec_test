@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/Users/ishiihyuga/trial/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.2.0/gems/sqlite3-1.6.3/ports/x86_64-apple-darwin22.6.0/sqlite3/3.42.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.42.0
+Libs: -L${libdir} -lsqlite3
+Libs.private: -lz 
+Cflags: -I${includedir}
