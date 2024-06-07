@@ -4,8 +4,8 @@ RSpec.describe ProjectsController, type: :controller do
   describe "#index" do
     context "as an authenticated user" do
       before do
-        @user = FactoryBot.create(:user)
-      end   
+        @user = FactoryBot.create(:user, email: "dddd@gmail.com")
+      end
       # 正常にレスポンスを返すこと
       it "responds successfully" do
         sign_in @user
